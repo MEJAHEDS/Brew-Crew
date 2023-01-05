@@ -28,10 +28,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -50,21 +47,31 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDHK0Fet4_yR-JNF-n-puyJz9oNDJcBOmI',
-    appId: '1:468643426117:web:34d8fd64a3b38da00b582c',
-    messagingSenderId: '468643426117',
-    projectId: 'fireapp-cd28a',
-    authDomain: 'fireapp-cd28a.firebaseapp.com',
-    storageBucket: 'fireapp-cd28a.appspot.com',
+    apiKey: 'AIzaSyD5uTq0CZGprjMV13O_0r80K_E5_cW0ChU',
+    appId: '1:414080375771:web:1396eabecce63acc9525fe',
+    messagingSenderId: '414080375771',
+    projectId: 'anapixnotes',
+    authDomain: 'anapixnotes.firebaseapp.com',
+    storageBucket: 'anapixnotes.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCGKnz_rdAOn0ZA7-6R9et4nfJ3XWxxeuQ',
-    appId: '1:468643426117:ios:bb187c1488d379320b582c',
-    messagingSenderId: '468643426117',
-    projectId: 'fireapp-cd28a',
-    storageBucket: 'fireapp-cd28a.appspot.com',
-    iosClientId: '468643426117-57rqa36olemn9dj605oee79ncqoes144.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBlZsrk1_8nPefOdSV1jWkgkDi_vU_fgUc',
+    appId: '1:414080375771:ios:6d63ad1b21d622bf9525fe',
+    messagingSenderId: '414080375771',
+    projectId: 'anapixnotes',
+    storageBucket: 'anapixnotes.appspot.com',
+    iosClientId: '414080375771-uqck9vv4oaar5kqpf97cdd7ouqlo0804.apps.googleusercontent.com',
+    iosBundleId: 'com.mejaheds.fireapp',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyBlZsrk1_8nPefOdSV1jWkgkDi_vU_fgUc',
+    appId: '1:414080375771:ios:6d63ad1b21d622bf9525fe',
+    messagingSenderId: '414080375771',
+    projectId: 'anapixnotes',
+    storageBucket: 'anapixnotes.appspot.com',
+    iosClientId: '414080375771-uqck9vv4oaar5kqpf97cdd7ouqlo0804.apps.googleusercontent.com',
     iosBundleId: 'com.mejaheds.fireapp',
   );
 }

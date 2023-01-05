@@ -2,11 +2,13 @@ import 'package:fireapp/models/Utilisateur.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fireapp/models/Utilisateur.dart';
 
+import '../models/carnet.dart';
 import 'database.dart';
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
+  get currentUser => this._auth.currentUser;
   // create user obj based on FirebaseUser
 
   Utilisateur? _userFromFirebaseUser(User? user) {
@@ -52,8 +54,7 @@ class AuthService {
           .createUserWithEmailAndPassword(email: email, password: password);
       User? user = userCredential.user;
       //create a new document for the user with the uid
-      await DataBaseService(uid: user!.uid)
-          .updateUserData('0', 'new crew member', 100);
+
       return _userFromFirebaseUser(user);
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {

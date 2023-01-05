@@ -23,11 +23,11 @@ class _SignInState extends State<SignIn> {
     return loading
         ? Loading()
         : Scaffold(
-            backgroundColor: Colors.brown[100],
+            backgroundColor: Colors.green[100],
             appBar: AppBar(
-              backgroundColor: Colors.brown[400],
+              backgroundColor: Colors.green[400],
               elevation: 0.0,
-              title: const Text('Sign in to Brew Crew'),
+              title: const Text('Sign in to Anapix Notes'),
               actions: <Widget>[
                 TextButton.icon(
                     icon: Icon(
@@ -82,10 +82,10 @@ class _SignInState extends State<SignIn> {
                       ElevatedButton(
                           style: ButtonStyle(
                               backgroundColor:
-                                  MaterialStateProperty.all(Colors.pink[400])),
+                                  MaterialStateProperty.all(Colors.blue[400])),
                           child: Text(
                             'Sign in',
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(color: Colors.black),
                           ),
                           onPressed: () async {
                             if (_formKey.currentState!.validate()) {

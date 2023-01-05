@@ -1,5 +1,5 @@
 import 'package:fireapp/models/Utilisateur.dart';
-import 'package:fireapp/screens/wrapper.dart';
+import 'package:fireapp/ui/screens/wrapper.dart';
 import 'package:fireapp/services/auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -9,9 +9,8 @@ import 'firebase_options.dart';
 
 main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  final FirebaseApp app = await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 

@@ -1,5 +1,5 @@
-import 'package:fireapp/screens/authenticate/register.dart';
-import 'package:fireapp/screens/authenticate/sign_in.dart';
+import 'package:fireapp/ui/screens/authenticate/register.dart';
+import 'package:fireapp/ui/screens/authenticate/sign_in.dart';
 import 'package:flutter/material.dart';
 
 class Authenticate extends StatefulWidget {

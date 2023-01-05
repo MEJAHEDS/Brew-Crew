@@ -24,11 +24,11 @@ class _RegisterState extends State<Register> {
     return loading
         ? Loading()
         : Scaffold(
-            backgroundColor: Colors.brown[100],
+            backgroundColor: Colors.green[100],
             appBar: AppBar(
-              backgroundColor: Colors.brown[400],
+              backgroundColor: Colors.green[400],
               elevation: 0.0,
-              title: const Text('Sign up to Brew Crew'),
+              title: const Text('Sign up to Anapix Notes'),
               actions: <Widget>[
                 TextButton.icon(
                     icon: Icon(
@@ -83,10 +83,10 @@ class _RegisterState extends State<Register> {
                       ElevatedButton(
                           style: ButtonStyle(
                               backgroundColor:
-                                  MaterialStateProperty.all(Colors.pink[400])),
+                                  MaterialStateProperty.all(Colors.blue[400])),
                           child: Text(
                             'Register',
-                            style: TextStyle(color: Colors.white),
+                            style: TextStyle(color: Colors.black),
                           ),
                           onPressed: () async {
                             if (_formKey.currentState!.validate()) {
